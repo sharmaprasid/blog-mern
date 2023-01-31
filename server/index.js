@@ -3,7 +3,7 @@ const cors= require('cors');
 const Db=require('./connection/Db');
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/user");
-const postRoute = require("./routes/post");
+const postRoute = require('./routes/post');
 const categoryRoute = require("./routes/category");
 const multer = require("multer");
 const path = require("path");
@@ -29,7 +29,8 @@ const app=express();
   app.use("/auth", authRoute);
   app.use("/users", userRoute);
   app.use("/posts", postRoute);
-  app.use("/categories", categoryRoute);
+ 
+  app.use("/category", categoryRoute);
   
  app.listen("5000",()=>{
   console.log("connected");

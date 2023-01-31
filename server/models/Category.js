@@ -8,4 +8,4 @@ const CategorySchema = new mongoose.Schema({
   
 },{timestamps:true});
 const Category = mongoose.model("Category", CategorySchema);
-module.exports = Post;
+module.exports =Category;
